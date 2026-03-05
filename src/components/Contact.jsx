@@ -19,9 +19,8 @@ const Contact = () => {
         };
 
         try {
-            // Replace the URL inside with your actual Render URL!
-            const response = await fetch('https://anit-electrical-website-email-api.onrender.com/api/contact', {
-
+            // Send request to the new Vercel Serverless Function
+            const response = await fetch('/api/contact', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData)
