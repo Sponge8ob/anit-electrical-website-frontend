@@ -19,7 +19,9 @@ const Contact = () => {
         };
 
         try {
-            const response = await fetch('http://localhost:5000/api/contact', {
+            // Replace the URL inside with your actual Render URL!
+            const response = await fetch('https://anit-electrical-website-email-api.onrender.com/api/contact', {
+
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData)
@@ -64,11 +66,11 @@ const Contact = () => {
                                     </div>
                                 </a>
 
-                                <a href="mailto:kanha151078@gmail.com" className="contact-item">
+                                <a href="mailto:kanha.151078@gmail.com" className="contact-item">
                                     <div className="icon-box"><Mail size={24} /></div>
                                     <div>
                                         <span className="label">Email</span>
-                                        <span className="value">kanha151078@gmail.com</span>
+                                        <span className="value">kanha.151078@gmail.com</span>
                                     </div>
                                 </a>
 
