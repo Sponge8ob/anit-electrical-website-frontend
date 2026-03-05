@@ -1,0 +1,52 @@
+.approach-section {
+    background-color: var(--color-bg-white);
+}
+
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+}
+
+.approach-card {
+    position: relative;
+    padding: 2rem;
+    border-left: 2px solid var(--color-bg-light);
+    transition: border-left-color var(--transition-normal);
+}
+
+.approach-card:hover {
+    border-left-color: var(--color-accent);
+}
+
+.approach-number {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-bg-light);
+    /* Subtle background number */
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    opacity: 0.5;
+    line-height: 1;
+}
+
+.approach-card:hover .approach-number {
+    color: rgba(14, 165, 233, 0.1);
+}
+
+.approach-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+    position: relative;
+    z-index: 1;
+}
+
+.approach-card p {
+    color: var(--color-text-main);
+    font-size: 1rem;
+    position: relative;
+    z-index: 1;
+}

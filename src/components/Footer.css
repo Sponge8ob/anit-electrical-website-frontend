@@ -1,0 +1,26 @@
+.footer {
+    background-color: var(--color-bg-dark);
+    color: #64748B;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.9rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-tag {
+    color: var(--color-accent);
+    font-weight: 500;
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+    }
+}

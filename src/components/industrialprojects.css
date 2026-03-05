@@ -1,0 +1,87 @@
+.industrial-section {
+    background-color: var(--bg-primary);
+    padding: 80px 0;
+}
+
+.industrial-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.industrial-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 30px;
+    border-radius: 12px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.industrial-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.industrial-content {
+    flex: 1;
+}
+
+.industrial-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.industrial-location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-tertiary);
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+}
+
+.industrial-description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.industrial-image-wrapper {
+    flex-shrink: 0;
+    width: 250px;
+    height: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.industrial-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.industrial-item:hover .industrial-image {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .industrial-item {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .industrial-image-wrapper {
+        width: 100%;
+        height: 200px;
+    }
+}

@@ -1,0 +1,49 @@
+:root {
+  /* Colors */
+  --color-primary: #000000;
+  /* Black */
+  --color-secondary: #262626;
+  /* Dark Grey (Neutral 900) */
+  --color-accent: #FF6600;
+  /* Safety Orange */
+  --color-accent-hover: #E65C00;
+  /* Darker Orange */
+  --color-gold: #F59E0B;
+  /* Kept for specific highlights if needed, closely matches accent now */
+
+  --color-bg-light: #F5F5F5;
+  /* Light Grey (Neutral 100) */
+  --color-bg-white: #FFFFFF;
+  --color-bg-dark: #121212;
+  /* Very Dark Grey/Black */
+
+  --color-text-main: #171717;
+  /* Neutral 900 */
+  --color-text-light: #525252;
+  /* Neutral 600 */
+  --color-text-inverse: #FFFFFF;
+
+  /* Typography */
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
+
+  /* Layout */
+  --container-width: 1200px;
+  --header-height: 80px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
